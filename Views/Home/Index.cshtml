@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-compatible' content="ie=edge">
+    <title>Dojodachi</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="top" class="row">
+            <div class="col">Fullness:@ViewBag.Dachidata.Fullness</div>
+            <div class="col">Happiness:@ViewBag.Dachidata.Happiness</div>
+            <div class="col">Meals:@ViewBag.Dachidata.Meals</div>
+            <div class="col">Energy:@ViewBag.Dachidata.Energy</div>
+        </div>
+
+        <div class="jumbotron">
+        <div id="action">
+            <p>@ViewBag.Dachidata.Message</p>
+
+        </div>
+        </div>
+
+        <div>
+            <a href="/Feed"><button type="button" class="btn btn-primary">Feed</button></a>
+            <a href="/Play"><button type="button" class="btn btn-primary">Play</button></a>
+            <a href="/Work"><button type="button" class="btn btn-primary">Work</button></a>
+            <a href="/Sleep"><button type="button" class="btn btn-primary">Sleep</button></a><br>
+            <a href="/Reset"><button type="button" class="btn btn-danger">Reset</button></a>
+        </div>
+        
+
+    </div>
+</body>
+
+</html>
